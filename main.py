@@ -149,7 +149,6 @@ def update_point_labels(data, ball_labs, gb_list):
 
 def evaluation(y_true, y_pred):
     nmi = nmi_score(y_true, y_pred, average_method='arithmetic')
-
     y_true = y_true - np.min(y_true)
     l1 = list(set(y_true))
     num_class1 = len(l1)
@@ -266,3 +265,4 @@ if __name__ == "__main__":
         print("ACC:", f"{ACC:.3f}", "\nNMI:", f"{NMI:.3f}")
         print('runtime: {:.3f}s'.format(times))
         print('\n')
+
