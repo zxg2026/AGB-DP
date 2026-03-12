@@ -201,8 +201,8 @@ if __name__ == "__main__":
         data = scaler.fit_transform(data)
         
         start = time.time()
+        
         gb_list = [data]
-      
         while 1:
             ball_number_1 = len(gb_list)
             gb_list = division2(gb_list)
@@ -243,11 +243,9 @@ if __name__ == "__main__":
             mean_rs.append(mean_r)
             centers.append(center)
             radiuss.append(radius)
-            ball_num.append(gb.shape[0])
 
         centersA = np.array(centers)
         radiusA = np.array(radiuss)
-        ball_numA = np.array(ball_num)
         ball_qualitysA = np.array(ball_qualitys)
         ball_mA = np.array(ball_m)
         
