@@ -1,4 +1,4 @@
-# **Adaptive granular-ball based density peak clustering**
+# **Adaptive granular-ball based density peak clustering(AGB-DP)**
 
 If you use this code in your work, please cite our paper:
 
