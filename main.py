@@ -1,4 +1,3 @@
-
 import time
 import numpy as np
 from munkres import Munkres
@@ -193,7 +192,7 @@ if __name__ == "__main__":
     file_names = ['zoo','iris']
 
     for i, file_name in enumerate(file_names):
-        df = np.loadtxt(f'{file_name}.txt')
+        df = np.loadtxt(f'Data\{file_name}.txt')
         data = df[:, :-1]
         data_label = df[:, -1]
         nc = len(np.unique(data_label))
